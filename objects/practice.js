@@ -15,6 +15,11 @@
 */
 
 //Code here
+let me = {
+  name: 'Nolan',
+  age: 25
+}
+// alert(me.name)
 
 ////////// PROBLEM 2 //////////
 
@@ -24,6 +29,14 @@
 */
 
 //Code here
+var favoriteThings = {
+  band: 'Nirvana',
+  food: 'Pizza',
+  person: 'Brees',
+  book: 'The shining',
+  movie: 'Colonia',
+  holiday: 'fourth of july'
+}
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
@@ -31,6 +44,8 @@
 */
 
 //Code here
+favoriteThings.car = 'tacoma';
+favoriteThings.brand = 'toyota'
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
@@ -38,7 +53,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
 ////////// PROBLEM 3 //////////
 
 /*
@@ -50,13 +66,16 @@
 */
 
 //Code here
+let backpack = {}
+let item = 'firstPocket'
+backpack[item]
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+alert(backpack)
 /*
 You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
@@ -97,6 +116,8 @@ var user2 = {
 
 //Code Here
 
+  
+
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
@@ -119,6 +140,19 @@ var user2 = {
 
 //Code Here
 
+function makePerson(name, birthday,ssn){
+  let newPerson = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+  return newPerson
+}
+
+const person = makePerson('bob', 'may1', 33445)
+
+console.log(person)
+
 ////////// PROBLEM 7 //////////
 
 /*
@@ -127,3 +161,10 @@ var user2 = {
 */
 
 //Code Here
+
+function makeCard(cardNumber, expirationDate, securityCode){
+  let newCard = {cardNumber, expirationDate, securityCode}
+  return newCard
+}
+
+makeCard(111555, 222, 555)
